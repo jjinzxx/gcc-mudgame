@@ -13,6 +13,6 @@ private:
     
 public:
     Card(Suit suit, Rank rank);
-    int getValue();  // 1부터 킹까지를 숫자로 표현해줄 함수
-    string getName(); // 카드모양과 숫자를 이름으로 반환해줄 함수
+    int getValue() const;  // 1부터 킹까지를 숫자로 표현해줄 함수
+    string getName() const; // 카드모양과 숫자를 이름으로 반환해줄 함수
 };
