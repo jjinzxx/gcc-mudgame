@@ -10,7 +10,7 @@ void GameManager::startGame()
     while (player.getMoney() > 0)
     {
         system("CLS");
-        cout << "--- Welcom to Blackjack ---" << endl;
+        cout << "--- Welcome to Blackjack! ---" << endl;
         
         // 매 판 시작 초기화
         deck = Deck();
@@ -20,7 +20,7 @@ void GameManager::startGame()
         
         // 베팅 된 금액
         int bet = 0;
-        cout << "\nCurrent Money :" << player.getMoney() << endl;
+        cout << "\nCurrent Money : " << player.getMoney() << endl;
         cout << "Enter bet amount : ";
         cin >> bet;
         system("CLS");
