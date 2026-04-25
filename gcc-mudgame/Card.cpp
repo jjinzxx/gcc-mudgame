@@ -3,7 +3,7 @@ using namespace std;
 
 Card::Card(Suit suit, Rank rank) : suit(suit), rank(rank) {}
 
-int Card::getValue()
+int Card::getValue() const
 {
     int value = static_cast<int>(rank); // 1부터 킹까지 열거형 자료형을 int형 정수로 명시적 형변환
     if (value > 10) return 10; // J, Q, K은 10점 처리
@@ -11,7 +11,7 @@ int Card::getValue()
     return value;
 }
 
-string Card::getName()
+string Card::getName() const
 {
     string suitName[] = {"Spade", "Diamond", "Heart", "Club"};
     string rankName[] = {"", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
